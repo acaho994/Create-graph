@@ -1,17 +1,17 @@
 import random
+import matplotlib.pyplot as plt
 
 
-points = []
+x = []
+y = []
 
 for i in range(0,10):
-    for j in range(0,10):
-        x = random.randint(0,10)
-        y = random.randint(0,10)
-    points += [(x,y)]
+    x += [random.randint(0,10)]
+    y += [random.randint(0,10)]
 
 
-## value = random.randint(0,10)
+print(x)
+print(y)
 
-
-
-print(points)
+plt.scatter(x,y)
+plt.show()
